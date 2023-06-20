@@ -287,4 +287,31 @@ properties:
       settings:
         id: Rustlang.Rustup
         source: winget
+    - resource: WinGetPackage
+      id: JDK
+      directives:
+        id: Install Oracle JDK 18
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: Oracle.JDK.18
+        source: winget
+    - resource: WinGetPackage
+      id: Go
+      directives:
+        id: Install Go
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: GoLang.Go
+        source: winget
+    - resource: WinGetPackage
+      id: LLVM
+      directives:
+        id: Install LLVM
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: LLVM.LLVM
+        source: winget
   configurationVersion: "0.2.0"
