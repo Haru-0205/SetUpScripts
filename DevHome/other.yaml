@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+properties:
+  assertions:
+    - resource: OsVersion
+      directives:
+        description: Verify min OS version requirement
+        module: Microsoft.Windows.Developer
+        allowPrerelease: true
+      settings:
+        MinVersion: "10.0.19041"
+  resources:
+    - resource: WinGetPackage
+      id: 1Password
+      directives:
+        description: Install 1Password
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: AgileBits.1Password
+        source: winget
+    - resource: WinGetPackage
+      id: 1PasswordCLI
+      directives:
+        description: Install 1Password CLI
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: AgileBits.1Password.CLI
+        source: winget
+    - resource: WinGetPackage
+      id: Chocolatey
+      directives:
+        id: Install Chocolatey
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: Chocolatey.Chocolatey
+        source: winget
+    - resource: WinGetPackage
+      id: CubeICE
+      directives:
+        id: Install CubeICE
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: Cubesoft.CubeICE
+        source: winget
+    - resource: WinGetPackage
+      id: Discord
+      directives:
+        id: Install Discord
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: Discord.Discord
+        source: winget
+    - resource: WinGetPackage
+      id: Figma
+      directives:
+        id: Install Figma
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: Figma.Figma
+        source: winget
+  configurationVersion: "0.2.0"
