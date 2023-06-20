@@ -153,4 +153,13 @@ properties:
       settings:
         id: JetBrains.RubyMine.EAP
         source: winget
+    - resource: WinGetPackage
+      id: GoLand
+      directives:
+        id: Install Jetbrains GoLand (EAP)
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: JetBrains.GoLand.EAP
+        source: winget
   configurationVersion: "0.2.0"
