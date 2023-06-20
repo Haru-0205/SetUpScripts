@@ -162,4 +162,129 @@ properties:
       settings:
         id: JetBrains.GoLand.EAP
         source: winget
+    - resource: WinGetPackage
+      id: Anaconda
+      directives:
+        id: Install Anaconda3
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: Anaconda.Anaconda3
+        source: winget
+    - resource: WinGetPackage
+      id: git
+      directives:
+        id: Install Git
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: Git.Git
+        source: winget
+    - resource: WinGetPackage
+      id: GitHub
+      directives:
+        id: Install GitHub Desktop
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: GitHub.GitHubDesktop
+        source: winget
+    - resource: WinGetPackage
+      id: GitKraken
+      directives:
+        id: Install GitKraken
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: Axosoft.GitKraken
+        source: winget
+    - resource: WinGetPackage
+      id: GitHubCLI
+      directives:
+        id: Install GitHub CLI
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: GitHub.CLI
+        source: winget
+    - resource: WinGetPackage
+      id: GitKrakenCLI
+      directives:
+        id: Install GitKraken CLI
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: GitKraken.CLI
+        source: winget
+    - resource: WinGetPackage
+      id: gsudo
+      directives:
+        id: Install gsudo
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: gerardog.gsudo
+        source: winget
+    - resource: WinGetPackage
+      id: ReSharper
+      directives:
+        id: Install JetBrains ReSharper (EAP)
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: JetBrains.ReSharper.EarlyAccess
+        source: winget
+    - resource: WinGetPackage
+      directives:
+        id: Install NeoVim
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: NeoVim.NeoVim
+        source: winget
+    - resource: WinGetPackage
+      id: NodeJS
+      directives:
+        id: Install Node.JS
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: OpenJS.NodeJS
+        source: winget
+    - resource: WinGetPackage
+      id: Pandoc
+      directives:
+        id: Install Pandoc
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: JohnMacFarlane.Pandoc
+        source: winget
+    - resource: WinGetPackage
+      id: Python
+      directives:
+        id: Install Python 3.11
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: Python.Python.3.11x
+        source: winget
+    - resource: WinGetPackage
+      id: Ruby
+      directives:
+        id: Install Ruby (With DevKit)
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: RubyInstallerTeam.RubywithDevKit.3.2
+        source: winget
+    - resource: WinGetPackage
+      id: Rustup
+      directives:
+        id: Install Rustup
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: Rustlang.Rustup
+        source: winget
   configurationVersion: "0.2.0"

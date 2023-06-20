@@ -2,5 +2,15 @@
 	"editor.formatOnSave": true,
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"files.autoSave": "onFocusChange",
-	"cSpell.words": ["IntelliJ", "Intelli", "JetBrains", "winget", "IDEA"]
+	"cSpell.words": [
+		"Axosoft",
+		"gerardog",
+		"gsudo",
+		"IDEA",
+		"Intelli",
+		"IntelliJ",
+		"JetBrains",
+		"Pandoc",
+		"winget"
+	]
 }
