@@ -1,0 +1,140 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+properties:
+  assertions:
+    - resource: OsVersion
+      directives:
+        description: Verify min OS version requirement
+        module: Microsoft.Windows.Developer
+        allowPrerelease: true
+      settings:
+        MinVersion: "10.0.19041"
+  resources:
+    - resource: WinGetPackage
+      id: VSCode
+      directives:
+        description: Install Microsoft Visual Studio Code
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: Microsoft.VisualStudio.Code
+        source: winget
+    - resource: WinGetPackage
+      id: VSCodeInsider
+      directives:
+        description: Install Microsoft Visual Studio Code Insider
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: Microsoft.VisualStudio.Code.Insiders
+        source: winget
+    - resource: WinGetPackage
+      id: SublimeText
+      directives:
+        id: Install Sublime Text 4
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: SublimeHQ.SublimeText.4
+        source: winget
+    - resource: WinGetPackage
+      id: SublimeMerge
+      directives:
+        id: Install Sublime Merge
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: SublimeHQ.SublimeMerge
+        source: winget
+    - resource: WinGetPackage
+      id: VisualStudio
+      directives:
+        id: Install Visual Studio 2022 Community
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: Microsoft.VisualStudio.2022.Community
+        source: winget
+    - resource: WinGetPackage
+      id: FireFoxDev
+      directives:
+        id: Install Firefox Developer Edition
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: Mozilla.FireFox.DeveloperEdition
+        source: winget
+    - resource: WinGetPackage
+      id: WebStorm
+      directives:
+        id: Install JetBrains WebStorm (EAP)
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: JetBrains.WebStorm.EAP
+        source: winget
+    - resource: WinGetPackage
+      id: IntelliJIDDAUltimate
+      directives:
+        id: Install JetBrains IntelliJ IDEA Ultimate (EAP)
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: JetBrains.IntelliJIDEA.Ultimate.EAP
+        source: winget
+    - resource: WinGetPackage
+      id: RubyMine
+      directives:
+        id: Install JetBrains RubyMine (EAP)
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: JetBrains.RubyMine.EarlyAccess
+        source: winget
+    - resource: WinGetPackage
+      id: CLion
+      directives:
+        id: Install JetBrains CLion (EAP)
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: JetBrains.CLion.EAP
+        source: winget
+    - resource: WinGetPackage
+      id: PyCharmProfessional
+      directives:
+        id: Install PyCharm Professional (EAP)
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: JetBrains.PyCharm.EAP
+        source: winget
+    - resource: WinGetPackage
+      id: Rider
+      directives:
+        id: Install JetBrains Rider (EAP)
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: JetBrains.Rider.EAP
+        source: winget
+    - resource: WinGetPackage
+      id: DataGrip
+      directives:
+        id: Install DataGrip (EAP)
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: JetBrains.DataGrip.EAP
+        source: winget
+    - resource: WinGetPackage
+      id: DataSpell
+      directives:
+        id: Install DataSpell (EAP)
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: JetBrains.DataSpell.EAP
+        source: EAP
+    - resource: WinGetPackage
+
+  configurationVersion: "0.2.0"

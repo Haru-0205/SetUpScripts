@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+properties:
+  assertions:
+    - resource: OsVersion
+      directives:
+        description: Verify min OS version requirement
+        module: Microsoft.Windows.Developer
+        allowPrerelease: true
+      settings:
+        MinVersion: "10.0.19041"
+  resources:
+    - resource: DeveloperMode
+      directives:
+        description: Enable Developer Mode
+        module: Microsoft.Windows.Developer
+        allowPrerelease: true
+      settings:
+        Ensure: Present
+    - resource: WinGetPackage
+      id: GitKraken-cli
+      directives:
+        description: Install Samsung Notes
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: GitKraken.cli
+        source: winget
+    - resource: WinGetPackage
+      id: github-cli
+      directives:
+        description: Install GitHub CLI
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: GitHub.cli
+        source: winget
+  configurationVersion: 0.2.0
