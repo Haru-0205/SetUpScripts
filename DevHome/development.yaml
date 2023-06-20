@@ -136,5 +136,21 @@ properties:
         id: JetBrains.DataSpell.EAP
         source: EAP
     - resource: WinGetPackage
-
+      id: Fleet
+      directives:
+        id: Install JetBrains Fleet (Public Preview)
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: JetBrains.FleetLauncher.Preview
+        source: winget
+    - resource: WinGetPackage
+      id: PHPStorm
+      directives:
+        id: Install JetBrains PHPStorm (EAP)
+        module: Microsoft.WinGet.DSC
+        allowPrerelease: true
+      settings:
+        id: JetBrains.RubyMine.EAP
+        source: winget
   configurationVersion: "0.2.0"
