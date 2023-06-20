@@ -235,6 +235,7 @@ properties:
         id: JetBrains.ReSharper.EarlyAccess
         source: winget
     - resource: WinGetPackage
+      id: NeoVim
       directives:
         id: Install NeoVim
         module: Microsoft.WinGet.DSC
